@@ -94,3 +94,49 @@ export interface BloodBank {
   longitude?: number;
   distance?: number;
 }
+
+export interface Pharmacy {
+  id: string;
+  name: string;
+  address: string;
+  phone?: string;
+  openingHours?: string;
+  latitude?: number;
+  longitude?: number;
+  distance?: number;
+}
+
+export interface Lab {
+  id: string;
+  name: string;
+  address: string;
+  phone?: string;
+  latitude?: number;
+  longitude?: number;
+  distance?: number;
+  services?: string[];
+}
+
+export interface LabBooking {
+  id: string;
+  userId: string;
+  labId: string;
+  labName: string;
+  testName: string;
+  preferredDate: string;
+  contactName: string;
+  contactPhone: string;
+  notes?: string;
+  createdAt: string;
+  status: 'pending' | 'confirmed' | 'completed' | 'cancelled';
+}
+
+export interface ConsultationSession {
+  id: string;
+  userId: string;
+  room: string;
+  startedAt: string;
+  endedAt?: string;
+  doctorName?: string;
+  notes?: string;
+}

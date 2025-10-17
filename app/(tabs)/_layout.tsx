@@ -79,6 +79,33 @@ export default function TabLayout() {
           ),
         }}
       />
+    <Tabs.Screen
+        name="pharmacies"
+        options={{
+          title: 'Pharmacies',
+          tabBarIcon: ({ size, color }) => (
+            <Ionicons name="medkit" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="labs"
+        options={{
+          title: 'Labs',
+          tabBarIcon: ({ size, color }) => (
+            <Ionicons name="flask" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="consultation"
+        options={{
+          title: 'Consult',
+          tabBarIcon: ({ size, color }) => (
+            <Ionicons name="videocam" size={size} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }

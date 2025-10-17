@@ -64,6 +64,27 @@ export default function Dashboard() {
       onPress: () => router.push('/(tabs)/symptom-checker'),
     },
     {
+      title: 'Nearby Pharmacies',
+      description: 'Find pharmacies with directions & contact',
+      icon: 'medkit' as const,
+      color: '#16a085',
+      onPress: () => router.push('/(tabs)/pharmacies'),
+    },
+    {
+      title: 'Nearby Labs',
+      description: 'Find labs and book tests',
+      icon: 'flask' as const,
+      color: '#8e44ad',
+      onPress: () => router.push('/(tabs)/labs'),
+    },
+    {
+      title: 'Consultation',
+      description: 'Video or chat consultation',
+      icon: 'videocam' as const,
+      color: '#2ecc71',
+      onPress: () => router.push('/(tabs)/consultation'),
+    },
+    {
       title: 'First Aid Guide',
       description: 'Emergency first aid instructions',
       icon: 'medical-outline' as const,
