@@ -1,4 +1,4 @@
-# RAHA Health 
+# RAHA 
 
 A comprehensive health assistant mobile application built with React Native and Expo.
 
